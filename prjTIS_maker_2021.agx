@@ -1969,6 +1969,13 @@ public void Lookup_Selecting(DbField fld, ref string filter) {
 $("#x_IssueCategoryID").change(function() { // Assume Field1 is a text input
    if($("#x_IssueCategoryID").val()==2)
    {
+   	document.getElementById("sales_caretegory_col_caption").style.display = "block";
+   	document.getElementById("sales_caretegory_col_value").style.display = "block";
+   }
+   else
+   {
+    	document.getElementById("sales_caretegory_col_caption").style.display = "none";
+    	document.getElementById("sales_caretegory_col_value").style.display = "none";
    }
 });
 ]]></CustomScript>
