@@ -1928,8 +1928,8 @@ ew.selectOptions.minimumResultsForSearch=1;
 </style>
 <table>
      <tbody>
-        <tr><td><b>{{{caption IssueCategoryID}}}</b></td><td id='sales_caretegory_col_caption'><b>{{{caption SalesCategoryID}}}</b></td><td><b>{{{caption AreaID}}}</b></td><td><b>{{{caption BranchID}}}</b></td></tr>
-        <tr><td>{{{value IssueCategoryID}}}</td><td id='sales_caretegory_col_value'>{{{value SalesCategoryID}}}</td><td>{{{value AreaID}}}</td><td>{{{value BranchID}}}</td></tr>
+        <tr><td><b>{{{caption IssueCategoryID}}}</b></td><td  style="display:none" id='sales_caretegory_col_caption'><b>{{{caption SalesCategoryID}}}</b></td><td><b>{{{caption AreaID}}}</b></td><td><b>{{{caption BranchID}}}</b></td></tr>
+        <tr><td>{{{value IssueCategoryID}}}</td><td style="display:none"  id='sales_caretegory_col_value'>{{{value SalesCategoryID}}}</td><td>{{{value AreaID}}}</td><td>{{{value BranchID}}}</td></tr>
     </tbody>
 </table>
 
@@ -1966,10 +1966,10 @@ public void Lookup_Selecting(DbField fld, ref string filter) {
 ]]></CustomScript>
   <CustomScript ScriptType="Client" ScriptCodeType="Table" ScriptName="Client Script" ScriptLanguage="" ScriptCtrlID="list" ScriptL1Key="vIssueManagement" ScriptL2Key=""><![CDATA[// Write your client script here, no need to add script tags.
 
-ewEvent.on("x_IssueCategoryID", "change", function(e) {
-    var form = this.form; // Get the HTML form element
-    var el2 = form.elements["x_IssueCategoryID"]; // Get the form element for field #2
-    alert(el2.value); // Set value to field #2 (assume el2 is a textbox)
+$("#x_IssueCategoryID").change(function() { // Assume Field1 is a text input
+   if($("#x_IssueCategoryID").val()==2)
+   {
+   }
 });
 ]]></CustomScript>
   <Menu MenuID="79" MenuText="v Event Management" MenuParentID="-1" MenuGroup="0" MenuSource="" MenuExtUrl="" MenuAnonymous="0" MenuSecurity="" MenuUrl="vEventManagement" MenuType="" MenuCustomUrl="0" MenuLevel="0" MenuShow="0" MenuDisplayOrder="-1" MenuIconClass="" MenuNavbar="0" />
