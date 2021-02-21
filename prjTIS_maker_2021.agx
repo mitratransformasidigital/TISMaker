@@ -1930,6 +1930,12 @@ public bool Row_Updating(Dictionary<string, object> rsold, Dictionary<string, ob
     return true;
 }
 ]]></CustomScript>
+  <CustomScript ScriptType="Server" ScriptCodeType="Table" ScriptName="Lookup_Selecting" ScriptLanguage="" ScriptCtrlID="" ScriptL1Key="vIssueManagement" ScriptL2Key=""><![CDATA[// Lookup Selecting event
+public void Lookup_Selecting(DbField fld, ref string filter) {
+    //test
+    // Enter your code here
+}
+]]></CustomScript>
   <Menu MenuID="78" MenuText="Master Pics copy" MenuParentID="-1" MenuGroup="0" MenuSource="" MenuExtUrl="" MenuAnonymous="0" MenuSecurity="" MenuUrl="MasterPics_copy" MenuType="" MenuCustomUrl="0" MenuLevel="0" MenuShow="0" MenuDisplayOrder="100" MenuIconClass="" MenuNavbar="0" />
   <Menu MenuID="24" MenuText="Major Account Minings" MenuParentID="-1" MenuGroup="0" MenuSource="" MenuExtUrl="" MenuAnonymous="0" MenuSecurity="" MenuUrl="MajorAccountMinings" MenuType="" MenuCustomUrl="0" MenuLevel="0" MenuShow="0" MenuDisplayOrder="200" MenuIconClass="" MenuNavbar="0" />
   <Menu MenuID="18" MenuText="v SCCPalembang Head" MenuParentID="-1" MenuGroup="0" MenuSource="" MenuExtUrl="" MenuAnonymous="0" MenuSecurity="" MenuUrl="vSCCPalembangHead" MenuType="" MenuCustomUrl="0" MenuLevel="0" MenuShow="0" MenuDisplayOrder="300" MenuIconClass="" MenuNavbar="0" />
