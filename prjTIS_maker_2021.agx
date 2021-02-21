@@ -1983,7 +1983,9 @@ public void Page_Load() {
 }
 ]]></CustomScript>
   <CustomScript ScriptType="Client" ScriptCodeType="Table" ScriptName="Client Script" ScriptLanguage="" ScriptCtrlID="add" ScriptL1Key="IssueManagement" ScriptL2Key=""><![CDATA[loadjs.ready("load", function() {
-document.getElementById("ew-breadcrumb2").getElementsByTagName("a")[0].href = "/vissuemanagementlist"; 
+document.getElementById("ew-breadcrumb2").getElementsByTagName("a")[0].href =
+document.getElementById("ew-breadcrumb2").getElementsByTagName("a")[0].href.replace("issuemanagementlist","vissuemanagementlist");
+
     // Write your table-specific startup script here
     // document.write("page loaded");
 });
