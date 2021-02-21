@@ -1956,7 +1956,7 @@ this.AddUrl="issuemanagementadd";
 ]]></CustomScript>
   <CustomScript ScriptType="Server" ScriptCodeType="Table" ScriptName="Page_Load" ScriptLanguage="" ScriptCtrlID="add" ScriptL1Key="IssueManagement" ScriptL2Key=""><![CDATA[// Page Load event
 public void Page_Load() {
-    this.ListUrl = "vissuemanagementlist";
+
 }
 ]]></CustomScript>
   <Menu MenuID="79" MenuText="v Event Management" MenuParentID="-1" MenuGroup="0" MenuSource="" MenuExtUrl="" MenuAnonymous="0" MenuSecurity="" MenuUrl="vEventManagement" MenuType="" MenuCustomUrl="0" MenuLevel="0" MenuShow="0" MenuDisplayOrder="-1" MenuIconClass="" MenuNavbar="0" />
