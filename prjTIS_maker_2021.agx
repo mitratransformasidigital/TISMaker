@@ -1961,10 +1961,7 @@ public void Page_Load() {
 ]]></CustomScript>
   <CustomScript ScriptType="Server" ScriptCodeType="Table" ScriptName="Page_Redirecting" ScriptLanguage="" ScriptCtrlID="add" ScriptL1Key="IssueManagement" ScriptL2Key=""><![CDATA[// Page Redirecting event
 public void Page_Redirecting(ref string url) {
-    if(url=="issuemanagementlist")
-    {
-    	url = "vissuemanagementlist"
-    }
+
 }
 ]]></CustomScript>
   <Menu MenuID="79" MenuText="v Event Management" MenuParentID="-1" MenuGroup="0" MenuSource="" MenuExtUrl="" MenuAnonymous="0" MenuSecurity="" MenuUrl="vEventManagement" MenuType="" MenuCustomUrl="0" MenuLevel="0" MenuShow="0" MenuDisplayOrder="-1" MenuIconClass="" MenuNavbar="0" />
