@@ -1964,8 +1964,8 @@ public void Lookup_Selecting(DbField fld, ref string filter) {
     // Enter your code here
 }
 ]]></CustomScript>
-  <CustomScript ScriptType="Client" ScriptCodeType="Table" ScriptName="Startup Script" ScriptLanguage="" ScriptCtrlID="add" ScriptL1Key="vIssueManagement" ScriptL2Key=""><![CDATA[// Write your table-specific startup script here
-// document.write("page loaded");
+  <CustomScript ScriptType="Client" ScriptCodeType="Table" ScriptName="Client Script" ScriptLanguage="" ScriptCtrlID="list" ScriptL1Key="vIssueManagement" ScriptL2Key=""><![CDATA[// Write your client script here, no need to add script tags.
+
 ewEvent.on("x_IssueCategoryID", "change", function(e) {
     var form = this.form; // Get the HTML form element
     var el2 = form.elements["x_IssueCategoryID"]; // Get the form element for field #2
